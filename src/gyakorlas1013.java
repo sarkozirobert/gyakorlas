@@ -8,13 +8,23 @@ public class gyakorlas1013 {
         }
     }
 
-    public static int findMinValue(int[] numbers){
+    public static int findMinValue(int[] numbers) {
         int minValue = numbers[0];
         for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < minValue){
+            if (numbers[i] < minValue) {
                 minValue = numbers[i];
             }
         }
         return minValue;
+    }
+
+    public static int evenNumberCounter(int[] numbers) {
+        int counter = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0){
+                counter++;
+            }
+        }
+        return counter;
     }
 }
