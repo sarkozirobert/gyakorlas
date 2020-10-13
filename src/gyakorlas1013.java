@@ -6,7 +6,7 @@ public class gyakorlas1013 {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (int) (Math.random() * 100);
         }
-        System.out.println(countOddNumbers(numbers));
+        System.out.println(sumOfEvenNumbers(numbers));
     }
 
     public static int findMinValue(int[] numbers) {
@@ -62,4 +62,17 @@ public class gyakorlas1013 {
         }
         return sum;
     }
+
+    // Írj metódusod, ami kiszámolja a tömbben szerepló páros számok összegét!
+
+    public static int sumOfEvenNumbers(int[] numbers){
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i] % 2 == 0){
+                sum += numbers[i];
+            }
+        }
+        return sum;
+    }
+
 }
