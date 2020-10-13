@@ -6,7 +6,7 @@ public class gyakorlas1013 {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (int) (Math.random() * 100);
         }
-        System.out.println(maxNumber(numbers));
+        System.out.println(countOddNumbers(numbers));
     }
 
     public static int findMinValue(int[] numbers) {
@@ -39,5 +39,17 @@ public class gyakorlas1013 {
             }
         }
         return max;
+    }
+
+    // Írj egy metódust, ami kiszámolja, hogy a tömbben hány darab páratlan szám van!
+
+    public static int countOddNumbers (int[] nums){
+        int counter = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i] % 2 == 1){
+                counter++;
+            }
+        }
+        return counter;
     }
 }
