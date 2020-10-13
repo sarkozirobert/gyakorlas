@@ -6,6 +6,7 @@ public class gyakorlas1013 {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (int) (Math.random() * 100);
         }
+        System.out.println(maxNumber(numbers));
     }
 
     public static int findMinValue(int[] numbers) {
@@ -26,5 +27,17 @@ public class gyakorlas1013 {
             }
         }
         return counter;
+    }
+
+    // Írj egy metódust, ami kiszámolja tömbben szereplő számok maximumát!
+
+    public static int maxNumber (int nums[]){
+        int max = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i] > max){
+                max = nums[i];
+            }
+        }
+        return max;
     }
 }
