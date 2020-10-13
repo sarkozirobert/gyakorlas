@@ -52,4 +52,14 @@ public class gyakorlas1013 {
         }
         return counter;
     }
+
+    public static int sumOfOddNumbers(int[] numbers){
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 1){
+                sum += numbers[i];
+            }
+        }
+        return sum;
+    }
 }
